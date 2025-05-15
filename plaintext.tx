@@ -1,0 +1,8 @@
+servicios_TI_Arintia/
+│── app.py           # Servidor Flask
+│── static/          # Recursos como imágenes, estilos CSS, JavaScript
+│   │── styles.css   # Diseño mejorado de la interfaz
+│   │── script.js    # Interactividad con JavaScript
+│── templates/       # HTML mejorado
+│   │── index.html   # Página principal con interfaz optimizada
+│── README.md        # Documentación

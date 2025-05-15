@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios TI Arintia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Servicios TI Arintia</h1>
+    </header>
+
+    <main>
+        <div class="buttons-container">
+            <button class="service-btn green" onclick="fetchData('mesa-ayuda')">Mesa de Ayuda</button>
+            <button class="service-btn orange" onclick="fetchData('nomina')">Nómina</button>
+            <button class="service-btn blue" onclick="fetchData('dms-mobile')">DMS Mobile</button>
+            <button class="service-btn yellow" onclick="fetchData('r-sales')">R-Sales</button>
+            <button class="service-btn red" onclick="fetchData('solicitudes-compra')">Solicitudes Compra</button>
+        </div>
+
+        <!-- Botones inferiores restaurados -->
+        <div class="bottom-buttons">
+            <button class="bottom-btn outlook" onclick="fetchData('outlook')">Outlook 365</button>
+            <button class="bottom-btn dms" onclick="fetchData('dms-mobile')">DMS Mobile</button>
+            <button class="bottom-btn arintia" onclick="fetchData('conexion-arintia')">Conexión ARINTIA</button>
+            <button class="bottom-btn sharepoint" onclick="fetchData('sharepoint')">SharePoint</button>
+        </div>
+
+        <!-- Restauración del logo -->
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Servicios TI Arintia">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Servicios TI Arintia | Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
